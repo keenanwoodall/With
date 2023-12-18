@@ -1,0 +1,13 @@
+{
+  "displayName": "With",
+  "name": "com.beans.with",
+  "description": "Adds \"With\" extension methods to Unity value types to make composing new values easy.",
+  "keywords": [
+    "c#",
+    "extension",
+    "method",
+    "with"
+  ],
+  "version": "0.0.0",
+  "hideInEditor": false
+}
