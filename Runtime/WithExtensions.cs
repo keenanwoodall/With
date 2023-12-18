@@ -21,7 +21,7 @@ public static class WithExtensions
         return new Vector3(v.x, v.y, z);
     }
     
-    public static Vector2 With(this Vector3 v, float? x, float? y)
+    public static Vector2 With(this Vector2 v, float? x, float? y)
     {
         if (x.HasValue)
             v.x = x.Value;
