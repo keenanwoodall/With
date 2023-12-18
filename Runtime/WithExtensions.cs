@@ -21,7 +21,7 @@ public static class WithExtensions
         return new Vector3(v.x, v.y, z);
     }
     
-    public static Vector2 With(this Vector2 v, float? x, float? y)
+    public static Vector2 With(this Vector2 v, float? x = null, float? y = null)
     {
         if (x.HasValue)
             v.x = x.Value;
@@ -56,7 +56,7 @@ public static class WithExtensions
         return new Vector4(v.x, v.y, v.z, w);
     }
     
-    public static Vector3 With(this Vector3 v, float? x, float? y, float? z)
+    public static Vector3 With(this Vector3 v, float? x = null, float? y = null, float? z = null)
     {
         if (x.HasValue)
             v.x = x.Value;
@@ -94,7 +94,7 @@ public static class WithExtensions
         return v;
     }
     
-    public static Vector4 With(this Vector4 v, float? x, float? y, float? z, float? w)
+    public static Vector4 With(this Vector4 v, float? x = null, float? y = null, float? z = null, float? w = null)
     {
         if (x.HasValue)
             v.x = x.Value;
