@@ -107,4 +107,44 @@ public static class WithExtensions
         
         return v;
     }
+    
+    // Vector4
+        
+    public static Color WithR(this Color c, float r)
+    {
+        c.r = r;
+        return c;
+    }
+    
+    public static Color WithG(this Color c, float g)
+    {
+        c.g = g;
+        return c;
+    }
+    
+    public static Color WithB(this Color c, float b)
+    {
+        c.b = b;
+        return c;
+    }
+    
+    public static Color WithA(this Color c, float a)
+    {
+        c.a = a;
+        return c;
+    }
+    
+    public static Color With(this Color c, float? r = null, float? g = null, float? b = null, float? a = null)
+    {
+        if (r.HasValue)
+            c.r = r.Value;
+        if (g.HasValue)
+            c.g = g.Value;
+        if (b.HasValue)
+            c.b = b.Value;
+        if (a.HasValue)
+            c.a = a.Value;
+        
+        return c;
+    }
 }
