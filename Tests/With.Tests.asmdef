@@ -1,0 +1,19 @@
+{
+    "name": "With.Tests",
+    "rootNamespace": "",
+    "references": [
+        "GUID:b4f63af17456e1947a8f73dc68b7ec5b",
+        "GUID:0acc523941302664db1f4e527237feb3"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": false,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
