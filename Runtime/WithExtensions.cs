@@ -5,19 +5,19 @@ public static class WithExtensions
 {
     // Vector2
     [MethodImpl(MethodImplOptions.AggressiveInlining)]
-    public static Vector2 WithX(this Vector2 v, float x)
+    public static Vector2 WithX(this Vector2 v, float x = 0f)
     {
         v.x = x;
         return v;
     }
     [MethodImpl(MethodImplOptions.AggressiveInlining)]
-    public static Vector2 WithY(this Vector2 v, float y)
+    public static Vector2 WithY(this Vector2 v, float y = 0f)
     {
         v.y = y;
         return v;
     }
     [MethodImpl(MethodImplOptions.AggressiveInlining)]
-    public static Vector3 WithZ(this Vector2 v, float z)
+    public static Vector3 WithZ(this Vector2 v, float z = 0f)
     {
         return new Vector3(v.x, v.y, z);
     }
@@ -34,25 +34,25 @@ public static class WithExtensions
     
     // Vector3
     [MethodImpl(MethodImplOptions.AggressiveInlining)]
-    public static Vector3 WithX(this Vector3 v, float x)
+    public static Vector3 WithX(this Vector3 v, float x = 0f)
     {
         v.x = x;
         return v;
     }
     [MethodImpl(MethodImplOptions.AggressiveInlining)]
-    public static Vector3 WithY(this Vector3 v, float y)
+    public static Vector3 WithY(this Vector3 v, float y = 0f)
     {
         v.y = y;
         return v;
     }
     [MethodImpl(MethodImplOptions.AggressiveInlining)]
-    public static Vector3 WithZ(this Vector3 v, float z)
+    public static Vector3 WithZ(this Vector3 v, float z = 0f)
     {
         v.z = z;
         return v;
     }
     [MethodImpl(MethodImplOptions.AggressiveInlining)]
-    public static Vector4 WithW(this Vector3 v, float w)
+    public static Vector4 WithW(this Vector3 v, float w = 0f)
     {
         return new Vector4(v.x, v.y, v.z, w);
     }
@@ -71,25 +71,25 @@ public static class WithExtensions
     
     // Vector4
     [MethodImpl(MethodImplOptions.AggressiveInlining)]
-    public static Vector4 WithX(this Vector4 v, float x)
+    public static Vector4 WithX(this Vector4 v, float x = 0f)
     {
         v.x = x;
         return v;
     }
     [MethodImpl(MethodImplOptions.AggressiveInlining)]
-    public static Vector4 WithY(this Vector4 v, float y)
+    public static Vector4 WithY(this Vector4 v, float y = 0f)
     {
         v.y = y;
         return v;
     }
     [MethodImpl(MethodImplOptions.AggressiveInlining)]
-    public static Vector4 WithZ(this Vector4 v, float z)
+    public static Vector4 WithZ(this Vector4 v, float z = 0f)
     {
         v.z = z;
         return v;
     }
     [MethodImpl(MethodImplOptions.AggressiveInlining)]
-    public static Vector4 WithW(this Vector4 v, float w)
+    public static Vector4 WithW(this Vector4 v, float w = 0f)
     {
         v.w = w;
         return v;
@@ -111,25 +111,25 @@ public static class WithExtensions
     
     // Vector4
     [MethodImpl(MethodImplOptions.AggressiveInlining)]
-    public static Color WithR(this Color c, float r)
+    public static Color WithR(this Color c, float r = 0f)
     {
         c.r = r;
         return c;
     }
     [MethodImpl(MethodImplOptions.AggressiveInlining)]
-    public static Color WithG(this Color c, float g)
+    public static Color WithG(this Color c, float g = 0f)
     {
         c.g = g;
         return c;
     }
     [MethodImpl(MethodImplOptions.AggressiveInlining)]
-    public static Color WithB(this Color c, float b)
+    public static Color WithB(this Color c, float b = 0f)
     {
         c.b = b;
         return c;
     }
     [MethodImpl(MethodImplOptions.AggressiveInlining)]
-    public static Color WithA(this Color c, float a)
+    public static Color WithA(this Color c, float a = 0f)
     {
         c.a = a;
         return c;
