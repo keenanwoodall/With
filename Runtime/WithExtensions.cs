@@ -1,7 +1,7 @@
 using System.Runtime.CompilerServices;
 using UnityEngine;
 
-public static class WithExtensions
+public static partial class WithExtensions
 {
     // Vector2
     [MethodImpl(MethodImplOptions.AggressiveInlining)]

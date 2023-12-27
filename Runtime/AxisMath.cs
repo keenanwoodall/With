@@ -1,9 +1,9 @@
 ﻿using System.Runtime.CompilerServices;
 
-public static class SwizzleMath
+public static class AxisMath
 {
     [MethodImpl(MethodImplOptions.AggressiveInlining)]
-    public static void UnpackSwizzleOffsets(int packedInt, out int x, out int y, out int z, out int w)
+    public static void UnpackOffsets(int packedInt, out int x, out int y, out int z, out int w)
     {
         x = (packedInt >> 24) & 0xFF;
         y = (packedInt >> 16) & 0xFF;
@@ -11,14 +11,14 @@ public static class SwizzleMath
         w = packedInt & 0xFF;
     }
     [MethodImpl(MethodImplOptions.AggressiveInlining)]
-    public static void UnpackSwizzleOffsets(int packedInt, out int x, out int y, out int z)
+    public static void UnpackOffsets(int packedInt, out int x, out int y, out int z)
     {
         x = (packedInt >> 16) & 0xFF;
         y = (packedInt >> 8) & 0xFF;
         z = packedInt & 0xFF;
     }
     [MethodImpl(MethodImplOptions.AggressiveInlining)]
-    public static void UnpackSwizzleOffsets(int packedInt, out int x, out int y)
+    public static void UnpackOffsets(int packedInt, out int x, out int y)
     {
         x = (packedInt >> 8) & 0xFF;
         y = packedInt & 0xFF;

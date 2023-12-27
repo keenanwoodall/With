@@ -1,4 +1,4 @@
-﻿public enum Swizzle2
+﻿public enum Axis2
 {
     XY = 0 << 8 | 1,
     YX = 1 << 8 | 0,
@@ -6,7 +6,7 @@
     YY = 1 << 8 | 1
 }
 
-public enum Swizzle3
+public enum Axis3
 {
     XXX = 0 << 16 | 0 << 8 | 0,
     XXY = 0 << 16 | 0 << 8 | 1,
@@ -37,7 +37,7 @@ public enum Swizzle3
     ZZZ = 2 << 16 | 2 << 8 | 2
 }
 
-public enum Swizzle4
+public enum Axis4
 {
     XXXX = (0 << 24) | (0 << 16) | (0 << 8) | 0,
     XXXY = (0 << 24) | (0 << 16) | (0 << 8) | 1,
