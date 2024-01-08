@@ -18,7 +18,7 @@ public class SwizzleEnumTests
     [Test, TestCaseSource(nameof(Swizzle2TestCases))]
     public void TestSwizzle2(Vector2 original, Axis2 swizzle, Vector2 expected)
     {
-        Assert.AreEqual(expected, original.As(swizzle));
+        Assert.AreEqual(expected, original.Swizzle(swizzle));
     }
 
     public static IEnumerable<TestCaseData> Swizzle3TestCases()
@@ -34,7 +34,7 @@ public class SwizzleEnumTests
     [Test, TestCaseSource(nameof(Swizzle3TestCases))]
     public void TestSwizzle3(Vector3 original, Axis3 swizzle, Vector3 expected)
     {
-        Assert.AreEqual(expected, original.As(swizzle));
+        Assert.AreEqual(expected, original.Swizzle(swizzle));
     }
 
     public static IEnumerable<TestCaseData> Swizzle4TestCases()
@@ -50,6 +50,6 @@ public class SwizzleEnumTests
     [Test, TestCaseSource(nameof(Swizzle4TestCases))]
     public void TestSwizzle4(Vector4 original, Axis4 swizzle, Vector4 expected)
     {
-        Assert.AreEqual(expected, original.As(swizzle));
+        Assert.AreEqual(expected, original.Swizzle(swizzle));
     }
 }
