@@ -1,7 +1,7 @@
 using System.Runtime.CompilerServices;
 using UnityEngine;
 
-public static partial class WithExtensions
+public static partial class SwizzleExtensions
 {
     [MethodImpl(MethodImplOptions.AggressiveInlining)]
     public static Vector2 XX(this Vector2 v)
